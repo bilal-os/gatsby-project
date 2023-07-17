@@ -12,7 +12,7 @@ const Testimonials = ({ data }) => {
   const { profile,  site } = data
 
 
-  let API = "http://localhost:5000/api/getTestimonials";
+  let API = "https://gatsby-backend-5939a551ead9.herokuapp.com/api/getTestimonials";
 
   const [testimonials1,setData]=useState([]);
 

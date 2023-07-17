@@ -5,7 +5,7 @@
   "main": "index.js",
   "type":"commonjs",
   "author": "Wojciech Kocjan <wojciech@kocjan.net>",
-  "proxy": "http://localhost:5000",
+  "proxy": "https://gatsby-backend-5939a551ead9.herokuapp.com",
   "dependencies": {
     "autoprefixer": "^10.2.5",
     "color": "^3.1.3",

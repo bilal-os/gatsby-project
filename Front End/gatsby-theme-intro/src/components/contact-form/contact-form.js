@@ -58,7 +58,7 @@ const ContactForm = ({  budget }) => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/mail/sendmail1', { name:name, email: email, phone: phone, message: message, subject: subject, selectedBudget: selectedBudget});
+      const response = await axios.post('https://gatsby-backend-5939a551ead9.herokuapp.com/api/mail/sendmail1', { name:name, email: email, phone: phone, message: message, subject: subject, selectedBudget: selectedBudget});
       if (response.status === 201) {
               console.log("success");
               window.alert("Contact Form Sent!")

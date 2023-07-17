@@ -61,7 +61,7 @@ function BookForm({option1, option2, option3}) {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/mail/sendmail', { name:name, email: email, phone: phone, message: message, option1: option1.Name, option2: option2.Name, option3: option3.Name });
+      const response = await axios.post('https://gatsby-backend-5939a551ead9.herokuapp.com/api/mail/sendmail', { name:name, email: email, phone: phone, message: message, option1: option1.Name, option2: option2.Name, option3: option3.Name });
       if (response.status === 201) {
               console.log("success");
               window.alert("Registraion Successful");

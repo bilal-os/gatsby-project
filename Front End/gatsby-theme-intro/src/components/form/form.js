@@ -47,7 +47,7 @@ const TestimonialFormCard = () => {
     setIsLoading(true);
   
     try {
-      const response = await axios.post('http://localhost:5000/api/createTestimonial', {  message: message,name:name, subject: subject});
+      const response = await axios.post('https://gatsby-backend-5939a551ead9.herokuapp.com/api/createTestimonial', {  message: message,name:name, subject: subject});
      
      console.log("Stuck here");
 
