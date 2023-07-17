@@ -1,25 +1,9 @@
 import React,{useState,useEffect} from "react";
-import { graphql, useStaticQuery } from "gatsby";
 import { StaticImage } from 'gatsby-plugin-image';
 
 
-
 export default function Reviews({testimonials}) {
-  const data = useStaticQuery(graphql`
-    query {
-      allMysqlTestimonials {
-        edges {
-          node {
-            Description
-            Email
-            Name
-            Subject
-            id
-          }
-        }
-      }
-    }
-  `);
+
 
   console.log("Data: ");
   console.log(testimonials);

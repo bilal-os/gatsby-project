@@ -17,24 +17,6 @@ module.exports = {
         theme: "classic",
       },
     },
-    {
-      resolve: `gatsby-source-mysql`,
-      options: {
-        connectionDetails: {
-          host: 'localhost',
-          user: 'root',
-          password: '123BIL@l789',
-          database: 'Students'
-        },
-        queries: [
-          {
-            statement: 'SELECT * FROM testimonials',
-            idFieldName: 'ID',
-            name: 'testimonials'
-          }
-        ]
-      }
-    } 
     ,
   ],
 }
