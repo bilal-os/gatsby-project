@@ -4,6 +4,7 @@ const app = express();
 const cors = require("cors");
 const mongoose  = require('mongoose');
 app.use(cors());
+require("dotenv").config(); 
 
 
 const DB = `mongodb+srv://mb561366:123BILaL789@cluster0.kusl9mj.mongodb.net/Testimonials?retryWrites=true&w=majority`;
@@ -13,7 +14,6 @@ mongoose.connect(DB).then(() => {
 }).catch((err) => console.log('No mongo db connection'));
 
 const PORT = process.env.PORT || 5000;
-
 
 
 app.use(express.json());
