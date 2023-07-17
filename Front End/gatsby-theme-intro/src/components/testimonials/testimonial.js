@@ -2,8 +2,9 @@ import React,{useState,useEffect} from "react";
 import { StaticImage } from 'gatsby-plugin-image';
 
 
-export default function Reviews({testimonials}) {
 
+export default function Reviews({testimonials}) {
+  
 
   console.log("Data: ");
   console.log(testimonials);
