@@ -1,6 +1,6 @@
 [[redirects]]
 from = "/*"
-to = "/subjects"
+to = "/subjects/index.html"
 status = 301
 
 [[redirects]]
