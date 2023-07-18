@@ -1,11 +1,14 @@
 [[redirects]]
-from = "latest"
-to = "subjects"
+from = "/*"
+to = "/subjects"
+status = 301
 
 [[redirects]]
-from = "latest"
-to = "workshops"
+from = "/*"
+to = "/workshops"
+status = 302
 
 [[redirects]]
-from = "latest"
-to = "testimonials"
+from = "/*"
+to = "/testimonials"
+status = 303
