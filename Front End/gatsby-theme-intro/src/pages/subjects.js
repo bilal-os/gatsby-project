@@ -8,6 +8,7 @@ import "../styles/style.css"
 
 
 
+
 const SubjectPage = ({ data }) => {
 
 
@@ -17,7 +18,6 @@ const SubjectPage = ({ data }) => {
     <div className="antialiased bg-back leading-normal font-text text-front">
 
     <Header initials={profile.initials} />
-
 
     
     <div className="flex flex-col items-center justify-center">

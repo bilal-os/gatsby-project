@@ -7,7 +7,6 @@ import Reviews from "../components/testimonials/testimonial"
 import TestimonialFormCard from "../components/form/form"
 import axios from "axios";
 
-
 const Testimonials = ({ data }) => {
   const { profile,  site } = data
 
