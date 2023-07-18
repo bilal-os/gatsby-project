@@ -1,15 +1,15 @@
 [[redirects]]
-  from = "/subjects/*"
+  from = "/*"
   to = "/subjects/index.html"
   status = 200
 
 [[redirects]]
-  from = "/workshops/*"
+  from = "/*"
   to = "/workshops/index.html"
   status = 200
 
 [[redirects]]
-  from = "/testimonials/*"
+  from = "/*"
   to = "/testimonials/index.html"
   status = 200
 
