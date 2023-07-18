@@ -1,0 +1,11 @@
+[[redirects]]
+from = "/*"
+to = "/subjects"
+
+[[redirects]]
+from = "/*"
+to = "/workshops"
+
+[[redirects]]
+from = "/*"
+to = "/testimonials"
