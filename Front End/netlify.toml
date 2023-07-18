@@ -4,12 +4,12 @@
   status = 301
 
 [[redirects]]
-  from = "/workshops/*"
+  from = "/subjects/*"
   to = "/workshops/index.html"
   status = 302
 
 [[redirects]]
-  from = "/testimonials/*"
+  from = "/subjects/*"
   to = "/testimonials/index.html"
   status = 303
 
