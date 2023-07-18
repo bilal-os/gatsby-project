@@ -5,12 +5,12 @@
 
 [[redirects]]
   from = "/subjects/*"
-  to = "/workshops/index.html"
+  to = "../workshops/index.html"
   status = 302
 
 [[redirects]]
   from = "/subjects/*"
-  to = "/testimonials/index.html"
+  to = "../testimonials/index.html"
   status = 303
 
 [[redirects]]
