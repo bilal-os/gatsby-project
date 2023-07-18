@@ -3,6 +3,7 @@ import { GatsbyImage, StaticImage } from 'gatsby-plugin-image'
 import Footer from "../components/footer/footer"
 import Header from "../components/header/header"
 import { graphql } from "gatsby"
+import "../styles/style.css"
 
 
 
