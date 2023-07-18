@@ -1,20 +1,19 @@
 [[redirects]]
   from = "/subjects/*"
-  to = "../workshops/index.html"
-  status = 302
-
-
-[[redirects]]
-  from = "/subjects/*"
-  to = "../subjects/index.html"
-  status = 301
+  to = "/subjects/index.html"
+  status = 200
 
 [[redirects]]
-  from = "/subjects/*"
-  to = "../testimonials/index.html"
-  status = 303
+  from = "/workshops/*"
+  to = "/workshops/index.html"
+  status = 200
 
 [[redirects]]
-  from = "/*" 
+  from = "/testimonials/*"
+  to = "/testimonials/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/*"
   to = "/index.html"
   status = 200
