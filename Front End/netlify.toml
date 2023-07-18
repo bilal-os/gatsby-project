@@ -1,4 +1,4 @@
 [[redirects]]
 from="/*"
-to="gatsby-theme-intro/src/templates/index.js"
+to="gatsby-theme-intro/src/templates/index.html"
 status = 200
