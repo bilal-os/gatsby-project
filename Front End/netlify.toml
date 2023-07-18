@@ -1,11 +1,11 @@
 [[redirects]]
-from = "/subjects"
-to = "/subjects"
+from = "latest"
+to = "subjects"
 
 [[redirects]]
-from = "/subjects"
-to = "/workshops"
+from = "latest"
+to = "workshops"
 
 [[redirects]]
-from = "/subjects"
-to = "/testimonials"
+from = "latest"
+to = "testimonials"
