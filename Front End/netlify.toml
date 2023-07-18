@@ -5,10 +5,10 @@ status = 301
 
 [[redirects]]
 from = "/*"
-to = "/workshops"
+to = "/workshops/index.html"
 status = 302
 
 [[redirects]]
 from = "/*"
-to = "/testimonials"
+to = "/testimonials/index.html"
 status = 303
