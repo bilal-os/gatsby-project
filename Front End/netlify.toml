@@ -1,11 +1,11 @@
 [[redirects]]
-from = "/*"
+from = "/subjects"
 to = "/subjects"
 
 [[redirects]]
-from = "/*"
+from = "/subjects"
 to = "/workshops"
 
 [[redirects]]
-from = "/*"
+from = "/subjects"
 to = "/testimonials"
