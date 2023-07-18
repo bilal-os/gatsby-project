@@ -1,0 +1,19 @@
+[[redirects]]
+  from = "/subjects/*"
+  to = "/subjects/index.html"
+  status = 301
+
+[[redirects]]
+  from = "/workshops/*"
+  to = "/workshops/index.html"
+  status = 302
+
+[[redirects]]
+  from = "/testimonials/*"
+  to = "/testimonials/index.html"
+  status = 303
+
+[[redirects]]
+  from = "/*" 
+  to = "/index.html"
+  status = 200
