@@ -1,14 +1,14 @@
 [[redirects]]
-from = "/*"
+from = "/subjects/*"
 to = "/subjects/index.html"
 status = 301
 
 [[redirects]]
-from = "/*"
+from = "/workshops/*"
 to = "/workshops/index.html"
 status = 302
 
 [[redirects]]
-from = "/*"
+from = "/testimonials/*"
 to = "/testimonials/index.html"
 status = 303
