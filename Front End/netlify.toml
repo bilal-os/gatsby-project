@@ -1,12 +1,13 @@
 [[redirects]]
   from = "/subjects/*"
-  to = "/subjects/index.html"
-  status = 301
+  to = "../workshops/index.html"
+  status = 302
+
 
 [[redirects]]
   from = "/subjects/*"
-  to = "../workshops/index.html"
-  status = 302
+  to = "../subjects/index.html"
+  status = 301
 
 [[redirects]]
   from = "/subjects/*"
