@@ -16,7 +16,6 @@ const Header = ({ initials,showThemeLogo = true }) => (
             aria-label="Intro theme"
             className="text-back-light hover:text-black"
             href="https://weeby.studio/intro"
-            rel="noopener noreferrer"
             target="_blank"
           >
             <svg
@@ -48,7 +47,7 @@ const Header = ({ initials,showThemeLogo = true }) => (
    className="inline-flex justify-right mr-2 w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150"
    href="subjects"
    target ="_blank"
-   rel="noreferrer"
+  
  >
    <FaBookOpen className="inline-block h-6 w-6 lg:hidden" />
    <span className="hidden lg:block">Subjects</span>
@@ -59,7 +58,6 @@ const Header = ({ initials,showThemeLogo = true }) => (
    href="workshops"
    target ="_blank"
 
-   rel="noreferrer"
 >
    <FaChalkboardTeacher className="inline-block h-6 w-6 lg:hidden" />
    <span className="hidden lg:block">WorkShops</span>
@@ -70,7 +68,6 @@ const Header = ({ initials,showThemeLogo = true }) => (
    href="testimonials"
    target ="_blank"
 
-   rel="noreferrer"
  >
    <FaStar className="inline-block h-6 w-6 lg:hidden" />
    <span className="hidden lg:block">Testimonials</span>
