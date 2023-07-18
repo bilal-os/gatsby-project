@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": " yarn workspace site build",
-    "clean": "yarn workspace site clean",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider yarn workspace site build",
+    "clean": "NODE_OPTIONS=--openssl-legacy-provider yarn workspace site clean",
     "develop": "NODE_OPTIONS=--openssl-legacy-provider yarn workspace site develop"
   },
   "workspaces": [
