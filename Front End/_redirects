@@ -1,0 +1,9 @@
+# Redirects
+/subjects/*  /subjects/index.html  301
+/workshops/* /workshops/index.html  302
+/testimonials/*  /testimonials/index.html  303
+
+# Rewrites
+/subjects/    /subjects/index.html   200
+/workshops/   /workshops/index.html  200
+/testimonials/  /testimonials/index.html  200
