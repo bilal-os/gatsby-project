@@ -68,7 +68,7 @@ const TestimonialFormCard = () => {
     <div>
       <button
         onClick={handleToggleForm}
-        className="flex w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150"
+        className="hover:shadow-form rounded-md bg-lead py-3 px-8 text-base  cursor-pointer  font-semibold text-black outline-none"
       >
         Write a Testimonial
       </button>
@@ -153,7 +153,7 @@ const TestimonialFormCard = () => {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="flex w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150"
+                  className="hover:shadow-form rounded-md bg-lead py-3 px-8 text-base  cursor-pointer  font-semibold text-black outline-none"
                 >
                  {isLoading ? <ClipLoader loading color='#ffffff' size={30}/> : 'Submit Testimonial'}
                 </button>
