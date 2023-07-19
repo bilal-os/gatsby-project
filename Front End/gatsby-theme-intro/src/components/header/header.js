@@ -2,6 +2,7 @@ import React from "react"
 import { FaEnvelope,FaStar,FaChalkboardTeacher,FaBookOpen } from "react-icons/fa"
 import { ProfileType } from "../../types"
 import { bool } from "prop-types"
+import {Link} from "gatsby";
 
 
 const Header = ({ initials,showThemeLogo = true }) => (
@@ -43,43 +44,40 @@ const Header = ({ initials,showThemeLogo = true }) => (
 
   <div className="inline-flex items-center justify-end">
 
-  <a
+  <Link
    className="inline-flex justify-right mr-2 w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150"
-   href="subjects"
-   target ="_blank"
+   to="/subjects/"
   
  >
    <FaBookOpen className="inline-block h-6 w-6 lg:hidden" />
    <span className="hidden lg:block">Subjects</span>
- </a>   
+ </Link>   
 
-<a
+<Link
    className="inline-flex justify-right mr-2 w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150"
-   href="workshops"
-   target ="_blank"
+   to="/workshops/"
 
 >
    <FaChalkboardTeacher className="inline-block h-6 w-6 lg:hidden" />
    <span className="hidden lg:block">WorkShops</span>
- </a>   
+ </Link>   
 
- <a
+ <Link
    className="inline-flex justify-right mr-2 w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150"
-   href="testimonials"
-   target ="_blank"
+   to="/testimonials/"
 
  >
    <FaStar className="inline-block h-6 w-6 lg:hidden" />
    <span className="hidden lg:block">Testimonials</span>
- </a>   
+ </Link>   
 
- <a
+ <Link
    className="flex w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150"
-   href="#contact"
+   to="/#contact"
  >
    <FaEnvelope className="inline-block h-6 w-6 lg:hidden" />
    <span className="hidden lg:block">Contact me</span>
- </a>
+ </Link>
  </div>
 
   </header>
