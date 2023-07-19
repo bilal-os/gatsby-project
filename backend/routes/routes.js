@@ -5,8 +5,6 @@
 
     /**HTTP Request */
 
-   //  router.post('/user/signup',signup );
-   //  router.post('/product/getBill',getbill);
     router.post('/mail/sendmail',sendmail);
     router.post('/mail/sendmail1',sendmail1);
     router.get('/getTestimonials',getTestimonials);
