@@ -34,6 +34,8 @@ function Workshops({ data }) {
       
       </div>
       </div>
+
+
       <Footer
         name={profile.name}
         showThemeLogo={site.siteMetadata.showThemeLogo}

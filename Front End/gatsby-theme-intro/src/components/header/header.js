@@ -1,25 +1,29 @@
-import React from "react"
-import { FaEnvelope,FaStar,FaChalkboardTeacher,FaBookOpen } from "react-icons/fa"
-import { ProfileType } from "../../types"
-import { bool } from "prop-types"
-import {Link} from "gatsby";
+import React, { useState } from "react";
+import { FaEnvelope, FaStar, FaChalkboardTeacher, FaBookOpen } from "react-icons/fa";
+import { ProfileType } from "../../types";
+import { bool } from "prop-types";
+import { Link } from "gatsby";
 
+const Header = ({ initials, showThemeLogo = true }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-const Header = ({ initials,showThemeLogo = true }) => (
-  <header className="flex justify-between p-4 lg:px-8">
-    <span className="inline-flex w-14 h-14 lg:mt-4 font-header font-bold text-xl justify-center items-center text-center text-front border-2 border-solid border-front rounded-full">
-      {initials}
-    </span>    
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-    <div className="inline-flex w-1/5 items-center justify-end">
-        {showThemeLogo && (
-          <a
-            aria-label="Intro theme"
-            className="text-back-light hover:text-black"
-            href="https://weeby.studio/intro"
-            target="_blank"
-          >
-            <svg
+  return (
+    <header className="flex flex-wrap items-center justify-between p-4 lg:px-8">
+      <span className="inline-flex w-14 h-14 lg:mt-4 font-header font-bold text-xl justify-center items-center text-center text-front border-2 border-solid border-front rounded-full">
+        {initials}
+      </span>
+
+      {showThemeLogo && (
+        <Link
+          aria-label="Intro theme"
+          className="text-back-light hover:text-black"
+          to="/"
+        >
+             <svg
               className="fill-current inline-block"
               viewBox="0 0 741 238"
               width="50"
@@ -38,54 +42,92 @@ const Header = ({ initials,showThemeLogo = true }) => (
                 />
               </g>
             </svg>
-          </a>
-        )}
-      </div>
+        </Link>
+      )}
 
-  <div className="inline-flex items-center justify-end">
+<div className="inline-flex items-center justify-end lg:flex lg:space-x-4">
+  <button
+    className="inline-flex justify-right w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:hidden"
+    onClick={toggleMenu}
+  >
+    <svg
+      className="inline-block h-6 w-6"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {menuOpen ? (
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      ) : (
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M4 6h16M4 12h16m-7 6h7"
+        />
+      )}
+    </svg>
+  </button>
 
-  <Link
-   className="inline-flex justify-right mr-2 w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150"
-   to="/subjects/"
-  
- >
-   <FaBookOpen className="inline-block h-6 w-6 lg:hidden" />
-   <span className="hidden lg:block">Subjects</span>
- </Link>   
+  <div
+    className={`${
+      menuOpen ? "block" : "hidden"
+    } lg:inline-flex lg:flex-grow lg:items-center lg:w-auto`}
+  >
+    <ul className="lg:flex lg:space-x-4">
+      <li>
+        <Link
+          className="inline-flex justify-right w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150 mb-2"
+          to="/subjects/"
+        >
+          <FaBookOpen className="inline-block h-6 w-6 lg:hidden" />
+          <span className="hidden lg:block">Subjects</span>
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="inline-flex justify-right w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150 mb-2"
+          to="/workshops/"
+        >
+          <FaChalkboardTeacher className="inline-block h-6 w-6 lg:hidden" />
+          <span className="hidden lg:block">Workshops</span>
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="inline-flex justify-right w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150 mb-2"
+          to="/testimonials/"
+        >
+          <FaStar className="inline-block h-6 w-6 lg:hidden" />
+          <span className="hidden lg:block">Testimonials</span>
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="flex w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150 mb-2"
+          to="/#contact"
+        >
+          <FaEnvelope className="inline-block h-6 w-6 lg:hidden" />
+          <span className="hidden lg:block">Contact me</span>
+        </Link>
+      </li>
+    </ul>
+  </div>
+</div>
 
-<Link
-   className="inline-flex justify-right mr-2 w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150"
-   to="/workshops/"
-
->
-   <FaChalkboardTeacher className="inline-block h-6 w-6 lg:hidden" />
-   <span className="hidden lg:block">WorkShops</span>
- </Link>   
-
- <Link
-   className="inline-flex justify-right mr-2 w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150"
-   to="/testimonials/"
-
- >
-   <FaStar className="inline-block h-6 w-6 lg:hidden" />
-   <span className="hidden lg:block">Testimonials</span>
- </Link>   
-
- <Link
-   className="flex w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150"
-   to="/#contact"
- >
-   <FaEnvelope className="inline-block h-6 w-6 lg:hidden" />
-   <span className="hidden lg:block">Contact me</span>
- </Link>
- </div>
-
-  </header>
-)
+    </header>
+  );
+};
 
 Header.propTypes = {
   initials: ProfileType.initials,
   showThemeLogo: bool,
-}
+};
 
-export default Header
+export default Header;
